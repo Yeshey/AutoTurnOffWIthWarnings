@@ -37,5 +37,5 @@ done
 Multiple Lines Comment
 '
 
-echo poweroff
-#poweroff
+#echo poweroff
+poweroff
