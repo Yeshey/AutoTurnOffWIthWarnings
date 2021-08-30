@@ -37,6 +37,6 @@ done
 Multiple Lines Comment
 '
 
-shutdown -h -P now
+shutdown -h -P now || systemctl poweroff -i
 #echo poweroff
 #poweroff
