@@ -37,5 +37,6 @@ done
 Multiple Lines Comment
 '
 
+#shutdown -h -P now
 #echo poweroff
 poweroff
