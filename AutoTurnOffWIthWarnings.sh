@@ -15,12 +15,14 @@ counter=1
 while [ $counter -le $(( xtoloop - 1 )) ]
 do
    notify-send "turning off in $time seconds"
+   echo "turning off in $time seconds"
    sleep 15
    counter=$(( $counter + 1 ))
    time=$(( $time - 15 ))
 done
 
 notify-send "turning off in $time seconds"
+echo "turning off in $time seconds"
 #echo "15sec + $remainder sec, to poweroff"
 
 while [ $time -ge 0 ]
@@ -28,6 +30,7 @@ do
    if [ $time -eq 15 ] || [ $time -eq 10 ] || [ $time -eq 5 ] || [ $time -eq 2 ]
    then
       notify-send "turning off in $time seconds"
+      echo "turning off in $time seconds"
    fi
    time=$(( $time - 1 ))
    sleep 1
